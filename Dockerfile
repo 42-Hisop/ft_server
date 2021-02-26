@@ -7,12 +7,12 @@ RUN apt-get update && apt-get install -y vim \
 	php7.3-fpm \
 	php-mysql \
 	php-mbstring \
-	mariadb-server \
+	mariadb-server
 
 COPY ./srcs/start.sh ./
-COPY ./srcs/default ./srcs_temp
-COPY ./srcs/wp-config.php ./srcs_temp
-COPY ./srcs/config.inc.php ./srcs_temp
+COPY ./srcs/default ./srcs_temp/
+COPY ./srcs/wp-config.php ./srcs_temp/
+COPY ./srcs/config.inc.php ./srcs_temp/
 
 EXPOSE 80 443
 

@@ -80,6 +80,7 @@ server {
 	#location ~ /\.ht {
 	#	deny all;
 	#}
+	error_page 497 https://$host$request_uri;	
 }
 
 
